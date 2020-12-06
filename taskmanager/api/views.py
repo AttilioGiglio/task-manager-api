@@ -7,7 +7,7 @@ from todo.models import Todo
 
 class TodoCompletedList(generics.ListAPIView):
     serializer_class = TodoSerializer
-    permission_class = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         user = self.request.user
