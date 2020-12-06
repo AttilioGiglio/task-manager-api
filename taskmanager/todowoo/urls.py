@@ -20,5 +20,5 @@ urlpatterns = [
     path('todo/<int:todo_pk>/delete', views.deletetodo, name='deletetodo'),
 
     # API
-    path('api/', include('api.url')),
+    path('api/', include('api.urls')),
 ]
